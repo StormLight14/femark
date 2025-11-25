@@ -142,16 +142,6 @@ impl Langs {
       res.langs.insert("tsx", c);
     }
     {
-      let mut c = TreeSitterCollection::toml().conf;
-      c.configure(&highlight_names);
-      let c = Lang {
-        conf: Some(c),
-        name: "TOML markup",
-      };
-      let c = Arc::new(c);
-      res.langs.insert("toml", c);
-    }
-    {
       let mut c = TreeSitterCollection::html().conf;
       c.configure(&highlight_names);
       let c = Lang {
@@ -227,16 +217,6 @@ impl Langs {
     //     let c = Arc::new(c);
     //     res.langs.insert("yml", c);
     //   }
-    {
-      let mut c = TreeSitterCollection::dockerfile().conf;
-      c.configure(&highlight_names);
-      let c = Lang {
-        conf: Some(c),
-        name: "Dockerfile",
-      };
-      let c = Arc::new(c);
-      res.langs.insert("Dockerfile", c);
-    }
     {
       let mut c = TreeSitterCollection::json().conf;
       c.configure(&highlight_names);
