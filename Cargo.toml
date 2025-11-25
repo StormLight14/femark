@@ -29,7 +29,7 @@ tree-sitter-python = "0.19.1"
 tree-sitter-rust = "0.20.1"
 tree-sitter-toml = "0.20.0"
 tree-sitter-typescript = "0.20.1"
-cc = "1"
+cc = ">=1.1.6, <2.0.0"
 
 [build-dependencies]
 napi-build = "2.0.0"
