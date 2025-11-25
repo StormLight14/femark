@@ -4,7 +4,7 @@ name = "femark"
 version = "0.0.0"
 
 [lib]
-crate-type = ["cdylib"]
+crate-type = ["rlib"]
 
 [dependencies]
 eyre = "0.6.8"
